@@ -70,22 +70,35 @@
 
 
 #=====================question number-2
-sales=[] 
-number_of_sales=int(input("enter the number of salrs"))
-for i in range(number_of_sales):
-    try:
-       data=int(input("Enter the sales data"))
-       sales.append(data)
-    except(ValueError):
-        print("Enter the valid data")
-if len(sales)==0:
-    print("sales data is not available")
-average_sales=sum(sales)/number_of_sales
-count=0
-for s in sales:
-    if s>average_sales:
-        count+=1
-print(count)
+# sales=[] 
+# number_of_sales=int(input("enter the number of salrs"))
+# for i in range(number_of_sales):
+#     try:
+#        data=int(input("Enter the sales data"))
+#        sales.append(data)
+#     except(ValueError):
+#         print("Enter the valid data")
+# if len(sales)==0:
+#     print("sales data is not available")
+# average_sales=sum(sales)/number_of_sales
+# count=0
+# for s in sales:
+#     if s>average_sales:
+#         count+=1
+# print(count)
+
+
+# l=[1,2,3,4]
+# ans=iter(l)
+# print(next(ans))  # prints 1
+# print(ans)
+
+l=[1,2,3,4]
+ans=reversed(l)
+print(next(ans))
+print(ans)
+
+
 
 
 
