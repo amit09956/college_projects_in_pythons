@@ -35,19 +35,19 @@ def remove_student():
     student_id = input("Enter Student ID to remove: ")
     if student_id in students:
         del students[student_id]
-        print("Student removed successfully!")
+        print("Student removed successfully")
     else:
-        print("Student ID not found!")
+        print("Student ID not found")
 
  
 def add_course():
     course_id = input("Enter Course ID: ")
     course_name = input("Enter Course Name: ")
     if course_id in courses:
-        print("Course ID already exists!")
+        print("Course ID already exists")
     else:
         courses[course_id] = course_name
-        print(f"Course {course_name} added successfully!")
+        print(f"Course {course_name} added successfully")
 
 
 def view_courses():

@@ -93,10 +93,33 @@
 # print(next(ans))  # prints 1
 # print(ans)
 
-l=[1,2,3,4]
-ans=reversed(l)
-print(next(ans))
-print(ans)
+# l=[1,2,3,4]
+# ans=reversed(l)
+# print(next(ans))
+# print(ans)
+
+names=['a','b','c','d','e','f','g','h']
+rank=[1,2,3,4,5,6,7,8]
+# gender=['male','female','unknown','prefer','male','male','female','shubh']
+gender=['male','female','unknown','prefer']
+
+#print(list(zip(names,rank)))
+# first=zip(names,rank)
+# print(list(zip(first,gender)))
+# print(list(zip(rank,gender)))
+# first=list(zip(names,rank,gender))
+# print(first)
+list_=[1,2,3,4,56,7]
+x=list(enumerate(list_,123))
+print(x)
+
+#wap to find the abs diff of odd pos value and even pos values
+n=input().split()
+odd=slice(0,len(n),2)
+even=slice(1,len(n),2)
+print(abs(sum([int(digit) for digit in n[odd]])-sum([int(digit) for digit in n[even]])))
+
+
 
 
 
